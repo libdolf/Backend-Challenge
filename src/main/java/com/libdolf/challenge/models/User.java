@@ -28,6 +28,6 @@ public class User {
 
     private boolean baned;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Inventory> inventory;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Inventory inventory;
 }

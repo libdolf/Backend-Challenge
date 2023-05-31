@@ -24,9 +24,6 @@ public class AppController {
     }
     @PostMapping(value = "/newuser")
     public ResponseEntity<User> createNewUser(@RequestBody User user){
-        for(Inventory inventory : user.getInventory()){
-            inventory.setUser(user);
-        }
         return ResponseEntity.ok(userRepository.save(user));
     }
 }

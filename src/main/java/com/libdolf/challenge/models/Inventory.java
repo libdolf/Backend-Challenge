@@ -15,15 +15,9 @@ public class Inventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String productName;
-
-    private int price;
-
-    private int quantity;
-
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
+    private Integer fijiWater;
+    private Integer campbellSoup;
+    private Integer firstAidPouch;
+    private Integer ak47;
 }
 
