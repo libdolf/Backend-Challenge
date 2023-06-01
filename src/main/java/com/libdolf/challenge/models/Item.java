@@ -5,14 +5,14 @@
 //import lombok.Data;
 //import lombok.NoArgsConstructor;
 //
-//import java.util.List;
 //@Entity
-//@AllArgsConstructor @NoArgsConstructor
+//@AllArgsConstructor
+//@NoArgsConstructor
 //@Data
-//public class Inventory {
+//public class Item {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;
-//    private List<Item> items;
-//    private User user;
+//    private String name;
+//    private int value;
 //}

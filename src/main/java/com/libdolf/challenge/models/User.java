@@ -16,19 +16,14 @@ import java.util.UUID;
 @NoArgsConstructor
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
     private int age;
-
     private char sex;
-
     private String[] location = new String[2];
-
     private boolean baned;
+    private Integer points;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn
-    private Inventory inventory;
+//    private Inventory inventory;
 }
