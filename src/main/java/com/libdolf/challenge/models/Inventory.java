@@ -19,5 +19,8 @@ public class Inventory {
     private Integer campbellSoup;
     private Integer firstAidPouch;
     private Integer ak47;
+
+    @OneToOne(mappedBy = "id")
+    private User user;
 }
 

@@ -29,5 +29,6 @@ public class User {
     private boolean baned;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn
     private Inventory inventory;
 }
